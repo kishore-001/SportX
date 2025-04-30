@@ -5,13 +5,14 @@ import NavBar from "../../components/Navbar/navbar";
 import Footer from "../../components/Footer/footer";
 
 export default function Dashboard() {
+  const backendUrl = import.meta.env.VITE_BACKEND_URL;
   const [sports, setSports] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
   const navigate = useNavigate();
 
   useEffect(() => {
-    fetch("http://192.168.176.133:8502/api/sports/")
+    fetch(`${backendUrl}/api/sports/`)
       .then((res) => {
         if (!res.ok) throw new Error("Failed to fetch sports");
         return res.json();

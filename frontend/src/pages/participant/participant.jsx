@@ -6,6 +6,7 @@ import "./participant.css";
 import img from "../../assets/img";
 
 export default function ParticipantPage() {
+  const backendUrl = import.meta.env.VITE_BACKEND_URL;
   const location = useLocation();
   const { sportId } = location.state || {};
 
@@ -16,7 +17,7 @@ export default function ParticipantPage() {
   useEffect(() => {
     if (!sportId) return;
 
-    fetch(`http://192.168.176.133:8502/api/sports/${sportId}`)
+    fetch(`${backendUrl}/api/sports/${sportId}`)
       .then((res) => {
         if (!res.ok) throw new Error("Failed to fetch sport data");
         return res.json();
