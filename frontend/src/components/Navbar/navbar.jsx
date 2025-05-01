@@ -1,3 +1,30 @@
+
+
+/**
+ * Navbar component that provides navigation links for the application.
+ * Includes both desktop and mobile-friendly navigation menus.
+ *
+ * @component
+ * @returns {JSX.Element} The rendered Navbar component.
+ *
+ * @example
+ * <Navbar />
+ *
+ * Features:
+ * - Displays the application title "SportX".
+ * - Provides navigation links to "Home" and "Dashboard".
+ * - Includes a responsive mobile menu with a toggleable sidebar.
+ * - Closes the sidebar when a link is clicked or when the overlay is clicked.
+ *
+ * State:
+ * - `isOpen` (boolean): Tracks whether the mobile sidebar is open or closed.
+ *
+ * Functions:
+ * - `toggleSidebar`: Toggles the `isOpen` state to open or close the sidebar.
+ * - `closeSidebar`: Sets the `isOpen` state to `false` to close the sidebar.
+ */
+
+
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import "./navbar.css";

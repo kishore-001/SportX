@@ -1,3 +1,41 @@
+/**
+ * Dashboard Component
+ *
+ * This component represents the main dashboard page of the application.
+ * It fetches and displays a list of sports from the backend API and allows
+ * users to navigate to a detailed view of each sport's participants.
+ *
+ * @component
+ * @returns {JSX.Element} The rendered Dashboard component.
+ *
+ * @example
+ * <Dashboard />
+ *
+ * @description
+ * - Fetches sports data from the backend API on component mount.
+ * - Displays a loading message while fetching data.
+ * - Displays an error message if the fetch request fails.
+ * - Renders a list of sports with a button to view details for each sport.
+ *
+ * @dependencies
+ * - `useEffect` and `useState` from React for state management and side effects.
+ * - `useNavigate` from react-router-dom for navigation.
+ * - `NavBar` and `Footer` components for consistent layout.
+ *
+ * @state
+ * - `sports` (Array): List of sports fetched from the backend.
+ * - `loading` (Boolean): Indicates whether the data is being loaded.
+ * - `error` (String|null): Stores error messages if the fetch request fails.
+ *
+ * @functions
+ * - `handleViewDetails(id: number)`: Navigates to the participant page with the selected sport's ID.
+ *
+ * @env
+ * - `VITE_BACKEND_URL`: The base URL of the backend API, accessed via environment variables.
+ */
+
+
+
 import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import "./dashboard.css";

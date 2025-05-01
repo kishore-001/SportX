@@ -1,3 +1,29 @@
+/**
+ * Home Component
+ * 
+ * This component represents the Home page of the SportX platform. It includes a navigation bar, 
+ * a footer, and multiple sections showcasing the platform's features and a call-to-action for users.
+ * 
+ * @component
+ * @returns {JSX.Element} The rendered Home page component.
+ * 
+ * Sections:
+ * - Welcome Section: Displays a welcome message and a button to navigate to the dashboard.
+ * - Features Section: Highlights the platform's features with icons, titles, and descriptions.
+ * - Call-to-Action Section: Encourages users to explore the SportX dashboard.
+ * 
+ * Dependencies:
+ * - Navbar: The navigation bar component.
+ * - Footer: The footer component.
+ * - Link: React Router's Link component for navigation.
+ * - icon: An object containing paths to icons used in the Features section.
+ * 
+ * Styling:
+ * - The component uses styles defined in the "home.css" file.
+ */
+
+
+
 import Navbar from "../../components/Navbar/navbar";
 import Footer from "../../components/Footer/footer";
 import "./home.css";

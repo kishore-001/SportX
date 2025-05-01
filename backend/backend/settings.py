@@ -38,9 +38,9 @@ INSTALLED_APPS = [
     "django.contrib.sessions",
     "django.contrib.messages",
     "django.contrib.staticfiles",
-    "api",
-    "rest_framework",
-    "corsheaders",
+    "api",  # Contains the Django REST API
+    "rest_framework" # Django REST framework,
+    "corsheaders" # CORS headers for cross-origin requests,
 ]
 
 MIDDLEWARE = [
@@ -131,5 +131,5 @@ STATIC_URL = "static/"
 
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 
-CORS_ALLOW_ALL_ORIGINS = True
+CORS_ALLOW_ALL_ORIGINS = True # Allow all origins for CORS
 

@@ -1,3 +1,33 @@
+/**
+ * ParticipantPage Component
+ * 
+ * This component displays a list of participants for a specific sport. It fetches
+ * the sport data from the backend using the sportId passed via the `useLocation` hook.
+ * 
+ * Features:
+ * - Displays a loading message while fetching data.
+ * - Shows an error message if the fetch fails.
+ * - Renders a list of participants with their details (name, age, and an image).
+ * 
+ * Props:
+ * - None
+ * 
+ * State:
+ * - sport: Object containing sport details and participants.
+ * - loading: Boolean indicating whether data is being fetched.
+ * - error: String containing error message if fetch fails.
+ * 
+ * Dependencies:
+ * - React (useState, useEffect)
+ * - React Router (useLocation)
+ * - Navbar and Footer components
+ * - CSS styles from "participant.css"
+ * - Image assets from "../../assets/img"
+ * 
+ * Environment Variables:
+ * - VITE_BACKEND_URL: Backend API base URL.
+ */
+
 import { useEffect, useState } from "react";
 import { useLocation } from "react-router-dom";
 import Navbar from "../../components/Navbar/navbar";
