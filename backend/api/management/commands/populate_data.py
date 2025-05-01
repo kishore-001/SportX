@@ -1,4 +1,33 @@
+"""
+This script is a Django management command used to populate the database with sports and participants. 
+It creates 12 sports, each having 4 unique participants and 2 shared participants.
+
+Classes:
+    Command: Inherits from Django's BaseCommand to implement the custom management command.
+
+Methods:
+    handle(*args, **kwargs):
+        - Clears existing data from the Sport and Participant models.
+        - Creates 12 sports with predefined names and descriptions.
+        - Generates 48 unique participants and assigns 4 of them to each sport.
+        - Creates 12 shared participants and assigns each to 2 different sports.
+
+Data:
+    sports_data: A list of dictionaries containing the name and description of 12 sports.
+    unique_participants_names: A list of 48 unique participant names.
+    shared_participants_names: A list of 12 shared participant names.
+
+Usage:
+    Run this command using Django's manage.py:
+        python manage.py populate_data
+
+Output:
+    Prints a success message upon successful population of the database.
+"""
+
+
 from django.core.management.base import BaseCommand
+
 from api.models import Sport, Participant
 import random
 
