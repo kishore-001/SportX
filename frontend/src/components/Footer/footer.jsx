@@ -1,3 +1,18 @@
+/**
+ * Footer Component
+ * 
+ * This component renders the footer section of the SportX application.
+ * It includes:
+ * - An "About" section with a brief description of SportX.
+ * - Links to resources such as Home and Dashboard.
+ * - Legal links including Privacy Policy and Terms & Conditions.
+ * - Social media icons for Facebook and Twitter.
+ * - A copyright notice.
+ * 
+ * Styling is applied via the `footer.css` file.
+ * Icons are provided by the `react-icons` library.
+ */
+
 import React from "react";
 import "./footer.css";
 import { FaFacebookF, FaTwitter } from "react-icons/fa";
