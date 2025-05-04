@@ -201,6 +201,3 @@ Check the README files in:
 - frontend/README.md
 - backend/README.md
 
-## License
-
-This project is licensed for educational/testing purposes as part of an internship evaluation.
